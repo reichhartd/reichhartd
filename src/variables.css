@@ -1,0 +1,9 @@
+:root {
+    /* Colours */
+    --colour-primary: #1ed760;
+
+    --colour-background: #282828;
+
+    --colour-active: #ffffff;
+    --colour-inactive: #9c9c9c;
+}

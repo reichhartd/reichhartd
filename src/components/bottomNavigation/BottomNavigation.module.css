@@ -1,0 +1,12 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    background-color: var(--colour-background);
+
+    text-align: center;
+}
