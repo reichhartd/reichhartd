@@ -4,6 +4,10 @@ body {
         'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    /* Global settings */
+    color: var(--colour-font-active);
+    background-color: var(--colour-background);
 }
 
 code {

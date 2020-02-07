@@ -14,7 +14,7 @@ export const ButtomNavigationItem: React.FC<Props> = ({ category, link, Icon, Ic
     const isActive = link === useLocation().pathname;
     return (
         <Link to={link} className={`${styles.children} ${isActive ? styles.active : styles.inactive}`}>
-            {isActive ? <IconActive className={styles.icon} /> : <Icon className={styles.icon} />}
+            {isActive ? <IconActive /> : <Icon />}
             <div className={styles.category}>{category}</div>
         </Link>
     );

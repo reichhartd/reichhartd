@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
 
-    background-color: var(--colour-background);
+    background-color: var(--colour-background-light);
 
     text-align: center;
 }

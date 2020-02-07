@@ -1,10 +1,6 @@
 .children {
     text-decoration: none;
-    padding: var(--size-space);
-}
-
-.icon {
-    font-size: var(--size-font-icon);
+    padding: var(--size-space-sm);
 }
 
 .category {
@@ -12,9 +8,9 @@
 }
 
 .active {
-    color: var(--colour-active);
+    color: var(--colour-font-active);
 }
 
 .inactive {
-    color: var(--colour-inactive);
+    color: var(--colour-font-inactive);
 }

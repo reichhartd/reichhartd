@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 240 240" version="1.1" viewBox="0 0 240 240" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .st0{fill:url(#b);}
+        .st1{fill:#C8DAEA;}
+        .st2{fill:#A9C9DD;}
+        .st3{fill:url(#a);}
+    </style>
+    <linearGradient id="b" x1="-183.58" x2="-183.83" y1="515.7" y2="515.11" gradientTransform="matrix(240 0 0 -240 44215 123805)" gradientUnits="userSpaceOnUse">
+	    <stop stop-color="#37AEE2" offset="0"/>
+        <stop stop-color="#1E96C8" offset="1"/>
+    </linearGradient>
+    <circle class="st0" cx="120" cy="120" r="120"/>
+    <path class="st1" d="M98,175c-3.89,0-3.23-1.47-4.57-5.17L82,132.21L170,80"/>
+    <path class="st2" d="m98 175c3 0 4.32-1.37 6-3l16-15.56-19.96-12.04"/>
+    <linearGradient id="a" x1="-182.97" x2="-182.78" y1="514.02" y2="513.66" gradientTransform="matrix(130.49 0 0 -109.45 24005 56383)" gradientUnits="userSpaceOnUse">
+	    <stop stop-color="#EFF7FC" offset="0"/>
+        <stop stop-color="#fff" offset="1"/>
+    </linearGradient>
+    <path class="st3" d="m100.04 144.41 48.36 35.73c5.52 3.04 9.5 1.47 10.88-5.12l19.68-92.76c2.01-8.08-3.08-11.75-8.36-9.35l-115.59 44.57c-7.89 3.17-7.84 7.57-1.44 9.53l29.66 9.26 68.67-43.32c3.24-1.97 6.22-0.91 3.78 1.26"/>
+</svg>

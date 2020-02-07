@@ -19,6 +19,11 @@ export const ButtomNavigation: React.FC = () => (
             IconActive={AccountTree}
         />
         <ButtomNavigationItem category={'Person'} link="/person" Icon={PersonOutlined} IconActive={Person} />
-        <ButtomNavigationItem category={'Links'} link="/links" Icon={ContactMailOutlined} IconActive={ContactMail} />
+        <ButtomNavigationItem
+            category={'Connect'}
+            link="/connect"
+            Icon={ContactMailOutlined}
+            IconActive={ContactMail}
+        />
     </div>
 );

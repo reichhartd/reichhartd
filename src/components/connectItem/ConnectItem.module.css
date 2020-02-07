@@ -1,0 +1,24 @@
+.link {
+    background-color: var(--colour-background-light);
+    padding: var(--size-space-m);
+    margin-top: var(--size-space-m);
+    text-decoration: none;
+}
+
+.logo {
+    height: var(--size-connect-logo);
+    width: var(--size-connect-logo);
+}
+
+.description {
+    font-size: var(--size-font);
+    color: var(--colour-font-active);
+    text-align: center;
+}
+
+.openInNew {
+    float: right;
+    margin-top: var(--size-space-m);
+    font-size: var(--size-font-icon-badge) !important;
+    color: var(--colour-font-active);
+}
