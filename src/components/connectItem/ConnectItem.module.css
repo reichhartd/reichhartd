@@ -1,7 +1,6 @@
 .link {
     background-color: var(--colour-background-light);
     padding: var(--size-space-m);
-    margin-top: var(--size-space-m);
     text-decoration: none;
 }
 

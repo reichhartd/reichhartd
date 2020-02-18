@@ -4,3 +4,7 @@
     justify-content: space-between;
     margin: 0 var(--size-space-m) 0 var(--size-space-m);
 }
+
+.item {
+    margin-top: var(--size-space-m);
+}

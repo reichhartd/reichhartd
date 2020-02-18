@@ -12,17 +12,17 @@ import styles from './Connect.module.css';
 
 export const Connect = () => (
     <div className={styles.container}>
-        <ConnectItem name={'GitHub'} url={'https://github.com/reichhartd'} icon={GitHubIcon} />
-        <ConnectItem name={'Instagram'} url={'https://www.instagram.com/danielreichhart/'} icon={InstagramIcon} />
-        <ConnectItem
-            name={'Khan Academy'}
-            url={'https://de.khanacademy.org/profile/reichhartd/'}
-            icon={KhanAcademyIcon}
-        />
-        <ConnectItem name={'LinkedIn'} url={'https://www.linkedin.com/in/daniel-reichhart/'} icon={LinkedInIcon} />
-        <ConnectItem name={'Snapchat'} url={'https://www.snapchat.com/add/danielreichhart/'} icon={SnapchatIcon} />
-        <ConnectItem name={'Telegram'} url={'https://t.me/reichhartd/'} icon={TelegramIcon} />
-        <ConnectItem name={'Treehouse'} url={'https://teamtreehouse.com/reichhartd'} icon={TreehouseIcon} />
-        <ConnectItem name={'Xing'} url={'https://www.xing.com/profile/Daniel_Reichhart/'} icon={XingIcon} />
+        {[
+            { name: 'GitHub', url: 'https://github.com/reichhartd', icon: GitHubIcon },
+            { name: 'Instagram', url: 'https://www.instagram.com/danielreichhart/', icon: InstagramIcon },
+            { name: 'Khan Academy', url: 'https://de.khanacademy.org/profile/reichhartd/', icon: KhanAcademyIcon },
+            { name: 'LinkedIn', url: 'https://www.linkedin.com/in/daniel-reichhart/', icon: LinkedInIcon },
+            { name: 'Snapchat', url: 'https://www.snapchat.com/add/danielreichhart/', icon: SnapchatIcon },
+            { name: 'Telegram', url: 'https://t.me/reichhartd/', icon: TelegramIcon },
+            { name: 'Treehouse', url: 'https://teamtreehouse.com/reichhartd', icon: TreehouseIcon },
+            { name: 'Xing', url: 'https://www.xing.com/profile/Daniel_Reichhart/', icon: XingIcon }
+        ].map(value => (
+            <ConnectItem {...value} key={value.name} className={styles.item} />
+        ))}
     </div>
 );
