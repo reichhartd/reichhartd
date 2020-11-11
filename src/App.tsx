@@ -1,21 +1,28 @@
 import * as React from 'react';
 import { ButtomNavigation } from './components/bottomNavigation/BottomNavigation';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import { Projects } from './pages/projects/Projects';
-import { Person } from './pages/person/Person';
-import { Connect } from './pages/connect/Connect';
+import { Loading } from './components/loading/Loading';
+const Projects = React.lazy(() => import('./pages/projects/Projects'));
+const Person = React.lazy(() => import('./pages/person/Person'));
+const Connect = React.lazy(() => import('./pages/connect/Connect'));
 
 export const App = () => (
     <BrowserRouter>
         <Switch>
             <Route path="/projects">
-                <Projects />
+                <React.Suspense fallback={Loading}>
+                    <Projects />
+                </React.Suspense>
             </Route>
             <Route path="/person">
-                <Person />
+                <React.Suspense fallback={Loading}>
+                    <Person />
+                </React.Suspense>
             </Route>
             <Route path="/connect">
-                <Connect />
+                <React.Suspense fallback={Loading}>
+                    <Connect />
+                </React.Suspense>
             </Route>
             <Route exact path="/">
                 <Redirect to="/person" />

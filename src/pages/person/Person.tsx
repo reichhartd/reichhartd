@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const Person = () => <h1>Person</h1>;
+const Person = () => <h1>Person</h1>;
+
+export default Person;

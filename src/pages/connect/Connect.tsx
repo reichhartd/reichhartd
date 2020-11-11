@@ -10,7 +10,7 @@ import TreehouseIcon from './assets/TreehouseIcon.svg';
 import XingIcon from './assets/XingIcon.svg';
 import styles from './Connect.module.css';
 
-export const Connect = () => (
+const Connect = () => (
     <div className={styles.container}>
         {[
             { name: 'GitHub', url: 'https://github.com/reichhartd', icon: GitHubIcon },
@@ -26,3 +26,5 @@ export const Connect = () => (
         ))}
     </div>
 );
+
+export default Connect;
