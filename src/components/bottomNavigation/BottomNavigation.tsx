@@ -1,13 +1,11 @@
 import * as React from 'react';
 import { ButtomNavigationItem } from './BottomNavigationItem';
-import {
-    AccountTree,
-    AccountTreeOutlined,
-    Person,
-    PersonOutlined,
-    ContactMail,
-    ContactMailOutlined,
-} from '@material-ui/icons';
+import AccountTree from '@material-ui/icons/AccountTree';
+import AccountTreeOutlined from '@material-ui/icons/AccountTreeOutlined';
+import Person from '@material-ui/icons/Person';
+import PersonOutlined from '@material-ui/icons/PersonOutlined';
+import ContactMail from '@material-ui/icons/ContactMail';
+import ContactMailOutlined from '@material-ui/icons/ContactMailOutlined';
 import styles from './BottomNavigation.module.css';
 
 export const ButtomNavigation: React.FC = () => (
