@@ -6,7 +6,7 @@ import {
     Person,
     PersonOutlined,
     ContactMail,
-    ContactMailOutlined
+    ContactMailOutlined,
 } from '@material-ui/icons';
 import styles from './BottomNavigation.module.css';
 

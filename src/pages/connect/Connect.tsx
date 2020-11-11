@@ -20,8 +20,8 @@ export const Connect = () => (
             { name: 'Snapchat', url: 'https://www.snapchat.com/add/danielreichhart/', icon: SnapchatIcon },
             { name: 'Telegram', url: 'https://t.me/reichhartd/', icon: TelegramIcon },
             { name: 'Treehouse', url: 'https://teamtreehouse.com/reichhartd', icon: TreehouseIcon },
-            { name: 'Xing', url: 'https://www.xing.com/profile/Daniel_Reichhart/', icon: XingIcon }
-        ].map(value => (
+            { name: 'Xing', url: 'https://www.xing.com/profile/Daniel_Reichhart/', icon: XingIcon },
+        ].map((value) => (
             <ConnectItem {...value} key={value.name} className={styles.item} />
         ))}
     </div>
