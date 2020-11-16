@@ -20,7 +20,8 @@
         "prettier": "prettier --write . --ignore-path ./.prettierignore",
         "lighthouse": "npm run build && node scripts/lighthouse.js",
         "analyze": "npm run build -- --stats && webpack-bundle-analyzer build/bundle-stats.json",
-        "serve": "serve -s build"
+        "serve": "serve -s build",
+        "cypress": "cypress open"
     },
     "husky": {
         "hooks": {
@@ -52,6 +53,7 @@
         "@types/react-dom": "^16.9.9",
         "@types/react-router-dom": "^5.1.6",
         "chrome-launcher": "^0.13.4",
+        "cypress": "^5.6.0",
         "husky": "^4.3.0",
         "lighthouse": "^6.4.1",
         "prettier": "2.1.2",
