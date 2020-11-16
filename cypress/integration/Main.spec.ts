@@ -16,6 +16,6 @@ describe('Main', () => {
     });
     it('should open GitHub in a new tab', () => {
         cy.visit('http://localhost:5000/connect');
-        cy.get('a[href="https://github.com/reichhartds"]').should('have.attr', 'target', '_blank');
+        cy.get('a[href="https://github.com/reichhartd"]').should('have.attr', 'target', '_blank');
     });
 });
