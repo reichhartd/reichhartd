@@ -17,7 +17,10 @@ const http = require('http');
     });
 
     // LIGHTHOUSE
-    const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless'] });
+    const chrome = await chromeLauncher.launch({
+        chromeFlags: ['--headless'],
+        chromePath: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+    });
     const options = { logLevel: 'info', output: 'html', port: chrome.port };
     const runnerResult = await lighthouse('http://localhost:5000/', options);
 

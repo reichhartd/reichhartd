@@ -19,7 +19,8 @@
         "eslint": "eslint src/**/*.{ts,tsx}",
         "prettier": "prettier --write . --ignore-path ./.prettierignore",
         "lighthouse": "npm run build && node scripts/lighthouse.js",
-        "analyze": "npm run build -- --stats && webpack-bundle-analyzer build/bundle-stats.json"
+        "analyze": "npm run build -- --stats && webpack-bundle-analyzer build/bundle-stats.json",
+        "serve": "serve -s build"
     },
     "husky": {
         "hooks": {
