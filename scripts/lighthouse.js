@@ -12,8 +12,8 @@ const http = require('http');
         return handler(request, response, { public: 'build' });
     });
 
-    server.listen(5000, () => {
-        console.log('Running at http://localhost:5000');
+    server.listen(5001, () => {
+        console.log('Running at http://localhost:5001');
     });
 
     // LIGHTHOUSE
@@ -22,7 +22,7 @@ const http = require('http');
         chromePath: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     });
     const options = { logLevel: 'info', output: 'html', port: chrome.port };
-    const runnerResult = await lighthouse('http://localhost:5000/', options);
+    const runnerResult = await lighthouse('http://localhost:5001/', options);
 
     // `.report` is the HTML report as a string
     const reportHtml = runnerResult.report;

@@ -12,20 +12,21 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "react-scripts build",
+        "build": "react-scripts build --stats",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "ts:verify": "tsc --noEmit",
         "eslint": "eslint src/**/*.{ts,tsx}",
         "prettier": "prettier --write . --ignore-path ./.prettierignore",
-        "lighthouse": "npm run build && node scripts/lighthouse.js",
-        "analyze": "npm run build -- --stats && webpack-bundle-analyzer build/bundle-stats.json",
+        "lighthouse": "node scripts/lighthouse.js",
+        "analyze": "webpack-bundle-analyzer build/bundle-stats.json",
         "serve": "serve -s build",
-        "cypress": "cypress open"
+        "cypress:open": "cypress open",
+        "cypress:run": "npm run serve & cypress run"
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm run ts:verify && npm run eslint && pretty-quick --staged && npm run lighthouse"
+            "pre-commit": "pretty-quick --staged && npm run ts:verify && npm run eslint && npm run build && npm run cypress:run && npm run lighthouse"
         }
     },
     "eslintConfig": {
