@@ -1,10 +1,13 @@
 # 05 Pepper your toolchain
 
+-   Husky
+-   CICD
+
 ## Code Quality
 
--   Prettier
+-   [Prettier](https://prettier.io/playground/)
 -   TypeScript
--   ESLint
+-   [ESLint](https://eslint.org/)
 
 ## Building & Testing
 
