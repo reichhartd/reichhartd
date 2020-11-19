@@ -1,6 +1,12 @@
 # 05 Pepper your toolchain
 
--   Husky
+## Example
+
+-   My Website
+
+## Environments
+
+-   Local (Pre-commit/Pre-push)
 -   CICD
 
 ## Code Quality
