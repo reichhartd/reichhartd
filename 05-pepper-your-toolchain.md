@@ -30,3 +30,7 @@
 -   Unit Test
 -   Cypress
 -   Lighthouse (Performance & more)
+
+### Talk
+
+-   Commit should work!
