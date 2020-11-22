@@ -6,20 +6,20 @@ export enum HealthStatus {
 }
 
 const Person = () => {
-    const [data, setData] = useState(HealthStatus.DOWN);
+    const [healthStatus, setHealthStatus] = useState(HealthStatus.DOWN);
 
     useEffect(() => {
         (async () => {
             const response = await fetch('/.well-known/live');
             const data = await response.json();
-            setData(data.status);
+            setHealthStatus(data.status);
         })();
     });
 
     return (
         <>
             <h1>Backend running:</h1>
-            <h2>Status: {data}</h2>
+            <h2>Status: {healthStatus}</h2>
         </>
     );
 };
