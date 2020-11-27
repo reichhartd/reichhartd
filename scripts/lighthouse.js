@@ -31,7 +31,7 @@ const http = require('http');
     // `.lhr` is the Lighthouse Result as a JS object
     console.log('Report is done for', runnerResult.lhr.finalUrl);
     const performanceScore = runnerResult.lhr.categories.performance.score * 100;
-    const threshold = 95;
+    const threshold = 70;
     if (performanceScore < threshold) {
         console.error(`ERROR: Performance score was ${performanceScore}%. Threshold is ${threshold}%.`);
         process.exit(1);
