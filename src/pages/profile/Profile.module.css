@@ -1,0 +1,11 @@
+.container {
+}
+
+.profilePicture {
+    height: 8em;
+    width: 8em;
+}
+
+.item {
+    margin-top: var(--size-space-m);
+}

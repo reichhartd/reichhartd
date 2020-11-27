@@ -3,7 +3,7 @@ import { ButtomNavigation } from './components/bottomNavigation/BottomNavigation
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { Loading } from './components/loading/Loading';
 const Projects = React.lazy(() => import('./pages/projects/Projects'));
-const Person = React.lazy(() => import('./pages/person/Person'));
+const Profile = React.lazy(() => import('./pages/profile/Profile'));
 const Connect = React.lazy(() => import('./pages/connect/Connect'));
 
 export const App = () => (
@@ -16,7 +16,7 @@ export const App = () => (
             </Route>
             <Route path="/person">
                 <React.Suspense fallback={Loading}>
-                    <Person />
+                    <Profile />
                 </React.Suspense>
             </Route>
             <Route path="/connect">

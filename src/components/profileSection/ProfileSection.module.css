@@ -1,0 +1,9 @@
+.container {
+    background-color: var(--colour-background-light);
+    padding: var(--size-space-sm);
+}
+
+.heading {
+    font-size: var(--size-font-heading);
+    font-weight: bold;
+}
